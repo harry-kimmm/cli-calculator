@@ -25,8 +25,9 @@ while(again != "No"):
         
     if operation == "factorial": 
             num1 = int(input("Enter a number: "))
-            for i in range(num1):
-                nextnum = (num1 - 1)
+            nextnum = num1
+            for i in range(num1-1):
+                nextnum = nextnum - 1
                 num1 = num1 * nextnum
             result = num1
             print("The result is: " + str(result))
