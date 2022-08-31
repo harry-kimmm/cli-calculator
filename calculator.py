@@ -6,22 +6,22 @@ while(again != "No"):
         num1 = int(input("Enter a number: "))
         num2 = int(input("Enter second number: "))
         result = str(num1 + num2)
-        print("The result is: " + result)
+        print(str(num1) + " + " + str(num2) + " = " + result)
     if operation == "subtraction":
         num1 = int(input("Enter a number: "))
         num2 = int(input("Enter second number: "))
         result = str(num1 - num2)
-        print("The result is: " + result)
+        print(str(num1) + " - " + str(num2) + " = " + result)
     if operation == "multiplication":
         num1 = int(input("Enter a number: "))
         num2 = int(input("Enter second number: "))
         result = str(num1 * num2)
-        print("The result is: " + result)  
+        print(str(num1) + " * " + str(num2) + " = " + result)
     if operation == "division":
         num1 = int(input("Enter a number: "))
         num2 = int(input("Enter second number: "))
         result = (num1 / num2)
-        print("The result is: " + str(round(result, 3)))
+        print(str(num1) + " / " + str(num2) + " = " + str(round(result, 3)))
         
     if operation == "factorial": 
             num1 = int(input("Enter a number: "))
@@ -30,5 +30,7 @@ while(again != "No"):
                 nextnum = nextnum - 1
                 num1 = num1 * nextnum
             result = num1
-            print("The result is: " + str(result))
-    again = input("Enter [No] to stop: ")
+            print(str(num1) + "! = " + str(result))
+    again = input("Input anything to continue. Enter [No] to stop. ")
+
+
