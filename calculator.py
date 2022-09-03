@@ -16,12 +16,25 @@ def division(a, b):
 
 def factorial(a):
     nextnum = a
+    shownum = a
     for i in range(a-1):
         nextnum = nextnum - 1
         a = a * nextnum
     result = a
-    return str(a) + "! = " + str(result)
-
+    return str(shownum) + "! = " + str(result)
+def fibonacci(a):
+    sequence = []
+    firstnum = 0
+    secnum = 1
+    sequence.append(str(firstnum))
+    sequence.append(str(secnum))
+    for i in range(a-2):
+        add = firstnum + secnum
+        firstnum = secnum
+        secnum = add
+        sequence.append(str(add))
+    for j in sequence:
+        print(j, end = " ")
 
 #Triggers functions for addition, subtraction, multiplication, divison
 while(again != "No"):
@@ -47,7 +60,11 @@ while(again != "No"):
          num1 = int(input("Enter a number: "))
          while operation == "factorial":
             print(factorial(num1))
-            break           
+            break
+         while operation == "fibonacci":
+            fibonacci(num1)
+            print(" ")      
+            break    
 
 
 #    if operation == "addition":
