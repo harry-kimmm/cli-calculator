@@ -31,6 +31,14 @@ while(again != "No"):
                 num1 = num1 * nextnum
             result = num1
             print(str(num1) + "! = " + str(result))
+    if operation == "fibonacci":
+        num1 = int(input("Enter a number: "))
+        arr = []
+        output = 0
+        for i in range(num1):
+            output = output + (num1-num1) + (num1+1)
+            print(str(output))
+
     again = input("Input anything to continue. Enter [No] to stop. ")
 
 
