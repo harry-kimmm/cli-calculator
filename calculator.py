@@ -11,8 +11,11 @@ def multiplication(a, b):
     result = a * b
     return str(a) + " * " + str(b) + " = " + str(result)
 def division(a, b):
-    result = a / b
-    return str(a) + " / " + str(b) + " = " + str(round(result, 2))
+    if b == 0:
+        return "Undefined"
+    else:
+        result = a / b
+        return str(a) + " / " + str(b) + " = " + str(result)
 def factorial(a):
     nextnum = a
     shownum = a
@@ -61,8 +64,11 @@ while(again != "End"):
             print(factorial(num1))
             break
          while operation == "fibonacci":
-            fibonacci(num1)
-            print(" ")      
+            if num1 == 1 or num == 0:
+                print("0")
+            else:
+                fibonacci(num1)
+                print(" ")      
             break    
     again = input("Input anything to continue. Enter [End] to stop. ")
 
