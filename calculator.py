@@ -64,7 +64,7 @@ while(again != "End"):
             print(factorial(num1))
             break
          while operation == "fibonacci":
-            if num1 == 1 or num == 0:
+            if num1 == 1 or num1 == 0:
                 print("0")
             else:
                 fibonacci(num1)
