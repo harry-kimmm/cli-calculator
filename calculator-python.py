@@ -70,6 +70,6 @@ while(again != "End"):
                 fibonacci(num1)
                 print(" ")      
             break    
-    again = input("Input anything to continue. Enter [End] to stop. ")
+    again = input('Input anything to continue. Enter "End" to stop. ')
 
 
